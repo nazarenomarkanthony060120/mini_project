@@ -1,4 +1,4 @@
-import AboutUs from './aboutus/page'
+import AboutMe from './aboutme/page'
 import Blog from './blog/page'
 import Career from './career/page'
 import Navbar from './components/navbar'
@@ -14,7 +14,7 @@ export default function Home() {
       <Main />
       <Services />
       <Projects />
-      <AboutUs />
+      <AboutMe />
       <Career />
       <Contact />
       <Blog />

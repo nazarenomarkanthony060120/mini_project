@@ -8,6 +8,9 @@ import Admin_Website from '../images/Admin_Website.png'
 import Teacher_Website from '../images/Teacher_Website.png'
 import Parent_Website from '../images/Parent_Website.png'
 import Object_Detection from '../images/Object_Detection_App.jpg'
+import Facebook_Icon from '../images/facebook_icon.svg'
+import Github_Icon from '../images/github_icon.svg'
+import Profile_Picture from '../images/profile_picture.png'
 
 export const PROJECTS_INFO = [
     { title: "Minimart Inventory System", 
@@ -200,7 +203,7 @@ export const SERVICE_INFO = [
         avail: 'Available',
         type: 'services'
     },
-        { title: "Game Development", 
+    { title: "Game Development", 
         imagePic: GameDev_Img,
         cardBodyTitle1: 'Front End:', 
         progLanguage: [
@@ -225,4 +228,22 @@ export const SERVICE_INFO = [
         avail: 'Available',
         type: 'services'
     },
+]
+
+export const ABOUT_US_INFO = [
+    { 
+        name: "Mark Anthony",
+        picture: Devil_Hacker,
+        imagePic: Profile_Picture,
+        position: "Developer",
+        until: "Present",
+        short_description: "Hello World!",
+        facebook: Facebook_Icon,
+        github: Github_Icon,
+        type: "about_me"
+    }
+]
+
+export const CAREER_INFO = [
+    {}
 ]
