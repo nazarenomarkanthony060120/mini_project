@@ -8,36 +8,53 @@ const Card: React.FC<Card> = ({ body }) => {
             {
                 body && body.map((data, index) => (
                     <div key={index} className='flex flex-col overflow-hidden rounded-lg border border-black dark:border-white'>
-                        <a href="#" className="group relative block h-40 overflow-hidden bg-gray-100 md:h-56">
-                            <Image src={ data.imagePic || '' } loading="lazy" alt={data.title} className="absolute inset-0 h-full w-full object-fit-none object-center transition duration-200 group-hover:scale-110" />
+                        <a href="#" className="h-40 overflow-hidden bg-gray-100 md:h-56 ">
+                            <Image src={ data.imagePic || '' } loading="lazy" alt={data.title} className="inset-0 h-full w-full transition duration-200 group-hover:scale-110" />
                         </a>
                         {
-                            data.type === "about_me" 
-                                ? 
-                                    <>
-                                        <div className="mt-auto flex items-center justify-between p-4 gap-20 ">
-                                            <div className="flex items-center gap-2">
-                                                <div className="h-10 w-10 shrink-0 overflow-hidden rounded-full bg-gray-100">
-                                                    <Image src={ data.picture || '' } loading="lazy" alt="Devil Hacker" className="h-full w-full object-cover object-center" />
-                                                </div>
-                                                <div>
-                                                    <span className="block text-indigo-500">{data.name}</span>
-                                                    <span className="block text-sm text-gray-400">{data.position} - {data.until}</span>
-                                                </div>
-                                            </div>
-                                            <div className="flex gap-1">
-                                                <a href="https://www.facebook.com/chowking7691/" target="_blank">
-                                                    <Image width={38} height={38} src={ data.facebook } loading="lazy" alt="Facebook" className="rounded border p-2 text-sm text-center text-gray-500 hover:bg-gray-700 hover:text-black"/>
-                                                </a>
-                                                <a href="https://github.com/nazarenomarkanthony060120" target="_blank">
-                                                    <Image width={38} height={38} src={ data.github } loading="lazy" alt="Github" className="rounded border p-2 text-sm text-center text-gray-500 hover:bg-gray-700 hover:text-black"/>
-                                                </a>
-                                            </div>
+                            data.type === "about_me" || data.type === "career"
+                            ? 
+                                <>
+                                    <div className="mt-auto flex items-center justify-between p-4 gap-20 ">
+                                        <div className="flex items-center gap-2">
+                                            {
+                                                data.type !== "career" 
+                                                
+                                                ?   <>
+                                                        <div className="h-10 w-10 shrink-0 overflow-hidden rounded-full bg-gray-100">
+                                                            <Image src={ data.picture || '' } loading="lazy" alt="Devil Hacker" className="h-full w-full object-cover object-center" />
+                                                        </div>
+                                                        <div>
+                                                            <span className="block text-indigo-500">{data.name}</span>
+                                                            <span className="block text-sm text-gray-400">{data.position} - {data.until}</span>
+                                                        </div>
+                                                    </>
+                                                :   <>
+                                                        <div>
+                                                            <span className="block text-indigo-500">{data.title}</span>
+                                                            <span className="block text-sm text-gray-400">{data.experience} - {data.until}</span>
+                                                        </div>
+                                                    </>
+                                            }
                                         </div>
-                                        <div className="mt-auto flex items-center justify-between p-4 gap-20 sm:p-6">
-                                            {data.short_description}
-                                        </div>
-                                    </>
+                                        {
+                                            data.type !== "career" 
+                                            ?   <div className="flex gap-1">
+                                                    <a href="https://www.facebook.com/chowking7691/" target="_blank">
+                                                        <Image width={38} height={38} src={ data.facebook } loading="lazy" alt="Facebook" className="rounded border p-2 text-sm text-center text-gray-500 hover:bg-gray-700 hover:text-black"/>
+                                                    </a>
+                                                    <a href="https://github.com/nazarenomarkanthony060120" target="_blank">
+                                                        <Image width={38} height={38} src={ data.github } loading="lazy" alt="Github" className="rounded border p-2 text-sm text-center text-gray-500 hover:bg-gray-700 hover:text-black"/>
+                                                    </a>
+                                                </div> 
+                                            : ''
+                                        }
+                                        
+                                    </div>
+                                    <div className="mt-auto flex items-center justify-between p-4 gap-20 sm:p-6">
+                                        {data.short_description}
+                                    </div>
+                                </>
 
                             : data.type === "services" || data.type === "project" ?
                                 <>
@@ -88,10 +105,10 @@ const Card: React.FC<Card> = ({ body }) => {
                                         </div>
                                         <div className="flex flex-col gap-1">
                                             <span className="rounded border px-2 py-1 text-sm text-center text-gray-500 hover:bg-cyan-400 hover:text-black">{data.avail}</span>
-                                            <span className="rounded border px-2 py-1 text-sm text-center text-gray-500 hover:bg-cyan-400 hover:text-black">{data.visit}</span>
                                         </div>
                                     </div>
-                                </> : ''
+                                </> 
+                            : ''
                         }
                         
                         

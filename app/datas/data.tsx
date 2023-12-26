@@ -11,6 +11,7 @@ import Object_Detection from '../images/Object_Detection_App.jpg'
 import Facebook_Icon from '../images/facebook_icon.svg'
 import Github_Icon from '../images/github_icon.svg'
 import Profile_Picture from '../images/profile_picture.png'
+import Web_Development_Image from '../images/web_development_image.jpg'
 
 export const PROJECTS_INFO = [
     { title: "Minimart Inventory System", 
@@ -245,5 +246,11 @@ export const ABOUT_US_INFO = [
 ]
 
 export const CAREER_INFO = [
-    {}
+    {
+        title: "Web Developer",
+        experience: "3 months",
+        until: "Present",
+        imagePic: Web_Development_Image,
+        type: "career"
+    }
 ]
