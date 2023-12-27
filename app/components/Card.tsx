@@ -1,6 +1,8 @@
 import React from 'react'
 import { Card } from '../types/types'
 import Image from 'next/image'
+import { Link } from 'react-scroll'
+import AvailableButton from './AvailableButton'
 
 const Card: React.FC<Card> = ({ body }) => {
     return (
@@ -8,7 +10,7 @@ const Card: React.FC<Card> = ({ body }) => {
             {
                 body && body.map((data, index) => (
                     <div key={index} className='flex flex-col overflow-hidden rounded-lg border border-black dark:border-white'>
-                        <a href="#" className="h-40 overflow-hidden bg-gray-100 md:h-56 ">
+                        <a href="#" className="group relative block h-40 overflow-hidden bg-gray-100 md:h-56">
                             <Image src={ data.imagePic || '' } loading="lazy" alt={data.title} className="inset-0 h-full w-full transition duration-200 group-hover:scale-110" />
                         </a>
                         {
@@ -40,11 +42,11 @@ const Card: React.FC<Card> = ({ body }) => {
                                         {
                                             data.type !== "career" 
                                             ?   <div className="flex gap-1">
-                                                    <a href="https://www.facebook.com/chowking7691/" target="_blank">
-                                                        <Image width={38} height={38} src={ data.facebook } loading="lazy" alt="Facebook" className="rounded border p-2 text-sm text-center text-gray-500 hover:bg-gray-700 hover:text-black"/>
+                                                    <a href="https://www.facebook.com/chowking7691/" target="_blank" className="group relative block overflow-hidden bg-gray-100  rounded">
+                                                        <Image width={38} height={38} src={ data.facebook } loading="lazy" alt="Facebook" className="transition duration-200 group-hover:scale-125 p-2 bg-white hover:bg-gray-300 hover:text-black"/>
                                                     </a>
-                                                    <a href="https://github.com/nazarenomarkanthony060120" target="_blank">
-                                                        <Image width={38} height={38} src={ data.github } loading="lazy" alt="Github" className="rounded border p-2 text-sm text-center text-gray-500 hover:bg-gray-700 hover:text-black"/>
+                                                    <a href="https://github.com/nazarenomarkanthony060120" target="_blank" className="group relative block overflow-hidden bg-gray-100  rounded">
+                                                        <Image width={38} height={38} src={ data.github } loading="lazy" alt="Github" className="transition duration-200 group-hover:scale-125 p-2 bg-white hover:bg-gray-300 hover:text-black"/>
                                                     </a>
                                                 </div> 
                                             : ''
@@ -104,7 +106,7 @@ const Card: React.FC<Card> = ({ body }) => {
                                             </div>
                                         </div>
                                         <div className="flex flex-col gap-1">
-                                            <span className="rounded border px-2 py-1 text-sm text-center text-gray-500 hover:bg-cyan-400 hover:text-black">{data.avail}</span>
+                                            <AvailableButton/>
                                         </div>
                                     </div>
                                 </> 

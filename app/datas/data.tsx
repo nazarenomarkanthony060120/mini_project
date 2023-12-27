@@ -34,9 +34,9 @@ export const PROJECTS_INFO = [
         picture: Devil_Hacker,
         name: 'Mark Anthony',
         work: 'Dev - Present',
-        avail: 'Available',
         visit: 'Visit',
-        type: 'project'
+        type: 'project',
+        to: "contact"
     },
     { title: "Attendance App System", 
         imagePic: Attendance_App,
@@ -56,9 +56,9 @@ export const PROJECTS_INFO = [
         picture: Devil_Hacker,
         name: 'Mark Anthony',
         work: 'Dev - Present',
-        avail: 'Available',
         visit: 'Visit',
-        type: 'project'
+        type: 'project',
+        to: "contact"
     },
     { title: "Admin Website", 
         imagePic: Admin_Website,
@@ -81,9 +81,9 @@ export const PROJECTS_INFO = [
         picture: Devil_Hacker,
         name: 'Mark Anthony',
         work: 'Dev - Present',
-        avail: 'Available',
         visit: 'Visit',
-        type: 'project'
+        type: 'project',
+        to: "contact"
     },
     { title: "Teacher Website", 
         imagePic: Teacher_Website,
@@ -106,9 +106,9 @@ export const PROJECTS_INFO = [
         picture: Devil_Hacker,
         name: 'Mark Anthony',
         work: 'Dev - Present',
-        avail: 'Available',
         visit: 'Visit',
-        type: 'project'
+        type: 'project',
+        to: "contact"
     },
     { title: "Parent Website", 
         imagePic: Parent_Website,
@@ -131,9 +131,9 @@ export const PROJECTS_INFO = [
         picture: Devil_Hacker,
         name: 'Mark Anthony',
         work: 'Dev - Present',
-        avail: 'Available',
         visit: 'Visit',
-        type: 'project'
+        type: 'project',
+        to: "contact"
     },
     { title: "Object Detection", 
         imagePic: Object_Detection,
@@ -153,9 +153,9 @@ export const PROJECTS_INFO = [
         picture: Devil_Hacker,
         name: 'Mark Anthony',
         work: 'Dev - Present',
-        avail: 'Available',
         visit: 'Visit',
-        type: 'project'
+        type: 'project',
+        to: "contact"
     },
 ]
 
@@ -176,8 +176,8 @@ export const SERVICE_INFO = [
         picture: Devil_Hacker,
         name: 'Mark Anthony',
         work: 'Dev - Present',
-        avail: 'Available',
-        type: 'services'
+        type: 'services',
+        to: "contact"
     },
     { title: "Website Development", 
         imagePic: Web_Img,
@@ -201,8 +201,8 @@ export const SERVICE_INFO = [
         picture: Devil_Hacker,
         name: 'Mark Anthony',
         work: 'Dev - Present',
-        avail: 'Available',
-        type: 'services'
+        type: 'services',
+        to: "contact"
     },
     { title: "Game Development", 
         imagePic: GameDev_Img,
@@ -226,8 +226,8 @@ export const SERVICE_INFO = [
         picture: Devil_Hacker,
         name: 'Mark Anthony',
         work: 'Dev - Present',
-        avail: 'Available',
-        type: 'services'
+        type: 'services',
+        to: "contact"
     },
 ]
 
@@ -241,7 +241,8 @@ export const ABOUT_US_INFO = [
         short_description: "Hello World!",
         facebook: Facebook_Icon,
         github: Github_Icon,
-        type: "about_me"
+        type: "about_me",
+        to: "contact"
     }
 ]
 
@@ -251,6 +252,7 @@ export const CAREER_INFO = [
         experience: "3 months",
         until: "Present",
         imagePic: Web_Development_Image,
-        type: "career"
+        type: "career",
+        to: "contact"
     }
 ]

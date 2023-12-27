@@ -109,64 +109,6 @@ const Navbar = () => {
                     }
                 </div>
             </div>
-            {/* <div className='dark:bg-black dark:text-white duration-300 transition-all bg-black bg-opacity-10 sticky h-fit inset-0 z-20 w-auto items-center justify-between '>
-                <div className="flex justify-between px-12 py-6">
-                    <div className="flex items-center gap-3">
-                        <Image src={Logo} className='w-10 h-10' alt="black bull" />
-                        <span className='font-bold text-lg '>BlackBulls v4.0.0</span> 
-                    </div>
-                    <div className="">
-                        <div className="hidden xl:block">
-                            <div classNam e="flex items-center gap-10 ">
-                                {
-                                    navItems.map((item, index) => (
-                                        <Link to={item.to} spy duration={500} smooth offset={-100} key={index}>
-                                            <span className='font-bold hover:underline text-sm'>{item.name.toUpperCase()}</span>
-                                        </Link>
-                                    ))
-                                }
-                                <Button title={ "login".toUpperCase() } classes='font-bold hover:text-slate-900 hover:bg-gray-200 text-sm rounded-lg p-2'/>
-                                <div onClick={ handleThemeSwitch }>{theme === "dark" ? <BiSun size={20}/> : <FiMoon size={20}/>}</div>
-                            </div>
-                        </div>
-                        <div className={`block xl:hidden ${ isClicked ? 'hidden' : ''}`}>
-                            <Button title={ <RxHamburgerMenu />} classes='' handleClick={handleIsClickedOpen}/>
-                        </div>
-                        <div className={`block xl:hidden ${ isClicked ? '' : 'hidden'}`}>
-                            <Button title={ <AiOutlineClose />} classes='' handleClick={handleIsClickedClose}/>
-                        </div>
-                    </div>
-                </div>
-                
-                {
-                    isClicked ? 
-                    <ul className='xl:hidden h-fit dark:bg-black dark:text-white bg-white'>
-                        {
-                            navItems.map((item, index) => (
-                                <Link key={index} to={item.to} spy={true} smooth={true} duration={500} className='box-border relative '>
-                                    <li className='list-none py-5 hover:bg-gray-200 hover:text-black pl-12 border-b text-sm font-bold' >{item.name.toUpperCase()}</li>
-                                </Link>
-                            ))
-                        }
-                        <Button title={ "login".toUpperCase() } classes='w-full text-start py-5 hover:bg-gray-200 hover:text-black pl-12 border-b text-sm font-bold'/>
-                        <div className='w-full text-start py-5 hover:bg-gray-200 hover:text-black pl-12 border-b text-sm font-bold' onClick={ handleThemeSwitch }>
-                            {
-                                theme === "dark" 
-                                ? <div className='flex gap-3'>
-                                    <BiSun size={20}/>
-                                    <span>Light Mode</span>
-                                </div>
-                                : <div className='flex gap-3'>
-                                    <FiMoon size={20}/>
-                                    <span>Dark Mode</span>
-                                </div>
-                            }
-                        </div>
-                    </ul>
-                    : ''
-                }
-            </div> */}
-            
         </>
     )
 }
