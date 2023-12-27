@@ -7,7 +7,7 @@ const About_Us_Card: React.FC<Card> = ({ body }) => {
         <>
             {
                 body && body.map((data, index) => (
-                    <div className='flex flex-col overflow-hidden rounded-lg border border-black dark:border-white'>
+                    <div key={index} className='flex flex-col overflow-hidden rounded-lg border border-black dark:border-white'>
                         {
                             data.imagePic != null ? (
                                 <a href="#" className="group relative block h-40 overflow-hidden bg-gray-100 md:h-56">
