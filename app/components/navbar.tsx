@@ -24,7 +24,7 @@ const Navbar = () => {
         { name: "about me", to: "aboutme" },
         { name: "career", to: "career" },
         { name: "contact", to: "contact" },
-        { name: "blog", to: "blog" },
+        { name: "skills", to: "skills" },
     ]
 
     const [ isClicked, setIsClicked ]: [ boolean, React.Dispatch<React.SetStateAction<boolean>>] = useState(false)

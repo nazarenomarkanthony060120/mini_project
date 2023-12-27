@@ -12,6 +12,20 @@ import Facebook_Icon from '../images/facebook_icon.svg'
 import Github_Icon from '../images/github_icon.svg'
 import Profile_Picture from '../images/profile_picture.png'
 import Web_Development_Image from '../images/web_development_image.jpg'
+import ReactJS from '../images/ReactJS.png'
+import Next13 from '../images/Next13.png'
+import HTML from '../images/HTML.png'
+import JS from '../images/JS.png'
+import TailwindCSS from '../images/Tailwind_CSS.png'
+import Bootstrap5 from '../images/BOOTSTRAP_5.png'
+import CSS from '../images/CSS.png'
+import NodeJS from '../images/NodeJS.png'
+import ExpressJS from '../images/ExpressJS.png'
+import SQL from '../images/SQL.png'
+import MySql from '../images/Mysql.png'
+import Git from '../images/GIT.png'
+import GitHub from '../images/GITHUB.png'
+
 
 export const PROJECTS_INFO = [
     { title: "Minimart Inventory System", 
@@ -254,5 +268,33 @@ export const CAREER_INFO = [
         imagePic: Web_Development_Image,
         type: "career",
         to: "contact"
+    }
+]
+
+export const SKILLS = [
+    {
+        frontend: [
+            ReactJS,
+            Next13,
+            HTML,
+            JS
+        ],
+        styling: {
+            tailwindCss: TailwindCSS,
+            bootstrap5: Bootstrap5,
+            css: CSS
+        },
+        backend: {
+            nodeJS: NodeJS,
+            expressJS: ExpressJS
+        },
+        database: {
+            sql: SQL,
+            mySql: MySql
+        },
+        versionControl: {
+            git: Git,
+            gitHub: GitHub
+        }
     }
 ]

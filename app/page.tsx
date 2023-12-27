@@ -1,5 +1,5 @@
 import AboutMe from './aboutme/page'
-import Blog from './blog/page'
+import Skills from './skills/page'
 import Career from './career/page'
 import Navbar from './components/navbar'
 import Contact from './contact/page'
@@ -17,7 +17,7 @@ export default function Home() {
       <AboutMe />
       <Career />
       <Contact />
-      <Blog />
+      <Skills />
     </>
   )
 }
