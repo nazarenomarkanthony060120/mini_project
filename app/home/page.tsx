@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image'
 import React from 'react'
 
 
@@ -56,35 +57,11 @@ const Main = () => {
                             </div>
                         </div>
                         <div className="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
-                            <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Fakurian Design" className="h-full w-full object-cover object-center" />
+                            <Image src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Fakurian Design" className="h-full w-full object-cover object-center" />
                         </div>
                     </section>
                 </div>
             </div>
-            
-
-            {/* <div className=' h-[90vh] max-lg:h-fit max-lg:py-10 flex items-center dark:bg-black dark:text-white duration-300 transition-all' id='home'>
-                <div className="grid grid-cols-1 lg:grid-cols-2 items-center max-lg:h-fit px-16 ">
-                    <div className="flex flex-col gap-10  ">
-                        <span className='text-2xl max-sm:text-xl font-bold text-blue-500'>Very proud to introduce</span>
-                        <h1 className='font-bold max-lg:text-5xl max-md:text-4xl max-sm:text-2xl text-6xl'>Revolutionary way to build the web</h1>
-                        <p className='text-lg text-justify'>This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random.</p>
-                        <div className="flex gap-10 max-lg:justify-center max-sm:flex-wrap max-sm:gap-5">
-                            <div className="relative w-fit ">
-                                <div className="absolute w-full h-full blur-lg bg-gradient-to-t from-green-500 via-yellow-500 to-red-500"></div>
-                                <Button title={'Start Now'} classes='relative hover:bg-cyan-400 shadow-xl hover:shadow-cyan-400 px-4 py-3 bg-cyan-500 rounded-lg text-white'/>
-                            </div>
-                            <div className="relative w-fit">
-                                <div className="absolute w-full h-full blur-lg bg-gradient-to-t from-green-500 via-yellow-500 to-red-500"></div>
-                                <Button title={'Take Tour'} classes='relative px-4 py-3 hover:bg-green-400 shadow-xl hover:shadow-green-400 bg-green-500 rounded-lg text-white'/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="">
-                        <Lottie height={100} width={100} animationData={animation} loop></Lottie>
-                    </div>
-                </div>
-            </div> */}
         </>
 
         
