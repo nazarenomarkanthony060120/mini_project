@@ -279,22 +279,22 @@ export const SKILLS = [
             HTML,
             JS
         ],
-        styling: {
-            tailwindCss: TailwindCSS,
-            bootstrap5: Bootstrap5,
-            css: CSS
-        },
-        backend: {
-            nodeJS: NodeJS,
-            expressJS: ExpressJS
-        },
-        database: {
-            sql: SQL,
-            mySql: MySql
-        },
-        versionControl: {
-            git: Git,
-            gitHub: GitHub
-        }
+        styling: [
+            TailwindCSS,
+            Bootstrap5,
+            CSS
+        ],
+        backend: [
+            NodeJS,
+            ExpressJS
+        ],
+        database: [
+            SQL,
+            MySql
+        ],
+        versionControl: [
+            Git,
+            GitHub
+        ]
     }
 ]
