@@ -7,7 +7,7 @@ const Skills = () => {
       <div className="bg-white dark:bg-black dark:text-white" id='skills'>
         <div className="flex flex-col gap-5">
           <span className="text-center font-bold">Skills</span>
-          <div className="flex ">
+          <div className="flex">
             <marquee direction="right" scrollamount="20" bgcolor="#afdcec">
               <div className='flex gap-5'>
                 {
