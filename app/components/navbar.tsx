@@ -28,7 +28,6 @@ const Navbar = () => {
     ]
 
     const [ isClicked, setIsClicked ]: [ boolean, React.Dispatch<React.SetStateAction<boolean>>] = useState(false)
-    const [ isDarkMode, setIsDarkMode ]: [ boolean, React.Dispatch<React.SetStateAction<boolean>>] = useState(false)
     const [ theme, setTheme ]: [ string, React.Dispatch<React.SetStateAction<string>>] = useState('dark')
 
     const handleIsClickedOpen = () => {
