@@ -8,4 +8,3 @@ export interface Card {
     body?: Array<any>;
     handleClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
-
